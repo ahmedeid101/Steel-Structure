@@ -55,7 +55,7 @@ function HomePage() {
             </div>
           </div>
           <div className="relative md:col-span-5">
-            <div className="relative overflow-hidden rounded-xl shadow-elevated">
+            <div className="relative overflow-hidden rounded-xl border border-border shadow-elevated">
               <img
                 src={heroImg}
                 alt="Steel structure framework at dusk"
@@ -63,9 +63,22 @@ function HomePage() {
                 height={1280}
                 className="aspect-[4/5] w-full object-cover"
               />
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-steel-dark/90 to-transparent p-6">
-                <p className="font-mono text-xs uppercase tracking-widest text-primary-foreground/70">Currently</p>
-                <p className="font-display text-xl font-semibold text-primary-foreground">Designing the structures that hold cities up.</p>
+              <div className="absolute inset-0 bg-gradient-to-t from-steel-dark/95 via-steel-dark/40 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-4 p-6 text-center">
+                <div className="relative">
+                  <div className="absolute -inset-1 rounded-full bg-accent/40 blur-md" aria-hidden />
+                  <img
+                    src={portraitImg}
+                    alt={site.name}
+                    width={320}
+                    height={320}
+                    className="relative h-36 w-36 rounded-full border-4 border-background object-cover shadow-elevated md:h-44 md:w-44"
+                  />
+                </div>
+                <div>
+                  <p className="font-display text-xl font-semibold text-primary-foreground">{site.name}</p>
+                  <p className="font-mono text-xs uppercase tracking-widest text-primary-foreground/70">{site.title}</p>
+                </div>
               </div>
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-border bg-background p-5 shadow-elevated md:block">
