@@ -54,32 +54,16 @@ function HomePage() {
               </Button>
             </div>
           </div>
-          <div className="relative md:col-span-5">
-            <div className="relative overflow-hidden rounded-xl border border-border shadow-elevated">
+          <div className="relative flex items-center justify-center md:col-span-5">
+            <div className="relative">
+              <div className="absolute -inset-4 rounded-full bg-accent/20 blur-2xl" aria-hidden />
               <img
-                src={heroImg}
-                alt="Steel structure framework at dusk"
-                width={1920}
-                height={1280}
-                className="aspect-[4/5] w-full object-cover"
+                src={portraitImg}
+                alt={site.name}
+                width={520}
+                height={520}
+                className="relative h-72 w-72 rounded-3xl border-4 border-background object-cover shadow-elevated md:h-96 md:w-96"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-steel-dark/95 via-steel-dark/40 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 flex flex-col items-center gap-4 p-6 text-center">
-                <div className="relative">
-                  <div className="absolute -inset-1 rounded-full bg-accent/40 blur-md" aria-hidden />
-                  <img
-                    src={portraitImg}
-                    alt={site.name}
-                    width={320}
-                    height={320}
-                    className="relative h-36 w-36 rounded-full border-4 border-background object-cover shadow-elevated md:h-44 md:w-44"
-                  />
-                </div>
-                <div>
-                  <p className="font-display text-xl font-semibold text-primary-foreground">{site.name}</p>
-                  <p className="font-mono text-xs uppercase tracking-widest text-primary-foreground/70">{site.title}</p>
-                </div>
-              </div>
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-border bg-background p-5 shadow-elevated md:block">
               <p className="font-display text-3xl font-bold">{site.yearsExperience}+</p>
