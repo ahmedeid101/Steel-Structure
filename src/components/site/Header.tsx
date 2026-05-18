@@ -38,7 +38,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-2 md:flex">
+          <ThemeToggle />
           <Button asChild size="sm">
             <a href={site.cvUrl} download>Download CV</a>
           </Button>
@@ -66,9 +67,12 @@ export function Header() {
                 {item.label}
               </Link>
             ))}
-            <Button asChild size="sm" className="mt-3 w-full">
-              <a href={site.cvUrl} download>Download CV</a>
-            </Button>
+            <div className="mt-2 flex items-center gap-2">
+              <ThemeToggle />
+              <Button asChild size="sm" className="flex-1">
+                <a href={site.cvUrl} download>Download CV</a>
+              </Button>
+            </div>
           </nav>
         </div>
       )}
