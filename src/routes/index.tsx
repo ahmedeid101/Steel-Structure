@@ -55,14 +55,14 @@ function HomePage() {
             </div>
           </div>
           <div className="relative flex items-center justify-center md:col-span-5">
-            <div className="relative">
+            <div className="relative mx-auto">
               <div className="absolute -inset-4 rounded-full bg-accent/20 blur-2xl" aria-hidden />
               <img
                 src={portraitImg}
                 alt={site.name}
                 width={520}
                 height={520}
-                className="relative h-72 w-72 rounded-3xl border-4 border-background object-cover shadow-elevated md:h-96 md:w-96"
+                className="relative mx-auto h-72 w-72 rounded-3xl border-4 border-background object-cover shadow-elevated md:h-96 md:w-96"
               />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-border bg-background p-5 shadow-elevated md:block">
