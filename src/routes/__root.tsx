@@ -9,6 +9,7 @@ import {
 } from "@tanstack/react-router";
 import { Header } from "@/components/site/Header";
 import { Footer } from "@/components/site/Footer";
+import { ThemeProvider } from "@/components/site/ThemeProvider";
 import { Toaster } from "@/components/ui/sonner";
 import { site } from "@/lib/site-data";
 

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Menu, X, HardHat } from "lucide-react";
 import { site } from "@/lib/site-data";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "./ThemeToggle";
 
 const nav = [
   { to: "/", label: "Home" },
