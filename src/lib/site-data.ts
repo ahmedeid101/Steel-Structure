@@ -7,7 +7,7 @@ export const site = {
   tagline: "Designing reliable steel structures from concept to construction.",
   summary:
     "Civil and structural engineer specializing in steel structures, industrial buildings, and on-site construction supervision. I combine analytical design with hands-on site experience to deliver safe, efficient, and code-compliant projects.",
-  yearsExperience: 5,
+  yearsExperience: 2,
   location: "Cairo, Egypt",
   email: "eslam.maher.eng@gmail.com",
   phone: "+20 100 000 0000",
