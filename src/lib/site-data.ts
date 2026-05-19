@@ -12,7 +12,7 @@ export const site = {
   email: "eslam.maher.eng@gmail.com",
   phone: "+20 100 000 0000",
   linkedin: "https://www.linkedin.com/in/eslam-maher-732624289/",
-  cvUrl: "/cv-eslam-maher.pdf",
+  cvUrl: "/Eslam-Maher-Salama-Ramadan-CV.pdf",
 };
 
 export const strengths = [
