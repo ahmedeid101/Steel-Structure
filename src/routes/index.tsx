@@ -38,18 +38,22 @@ function HomePage() {
               I'm {site.name}.
             </p>
             <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground animate-fade-up animate-delay-2">
-              {site.tagline} {site.yearsExperience}+ years across design offices and active construction sites.
+              {site.tagline} {site.yearsExperience}+ years across design offices and active
+              construction sites.
             </p>
             <div className="mt-8 flex flex-wrap gap-3 animate-fade-up animate-delay-3">
               <Button asChild size="lg">
-                <Link to="/projects">View Projects <ArrowRight className="ml-2 h-4 w-4" /></Link>
+                <Link to="/projects">
+                  View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
               </Button>
               <Button asChild size="lg" variant="outline">
                 <Link to="/contact">Get in touch</Link>
               </Button>
               <Button asChild size="lg" variant="ghost">
                 <a href={site.cvUrl} download>
-                  <Download className="mr-2 h-4 w-4" />Download CV
+                  <Download className="mr-2 h-4 w-4" />
+                  Download CV
                 </a>
               </Button>
             </div>
@@ -67,7 +71,9 @@ function HomePage() {
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-border bg-background p-5 shadow-elevated md:block">
               <p className="font-display text-3xl font-bold">{site.yearsExperience}+</p>
-              <p className="text-xs uppercase tracking-wider text-muted-foreground">Years experience</p>
+              <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                Years experience
+              </p>
             </div>
           </div>
         </div>
@@ -91,10 +97,15 @@ function HomePage() {
       <section className="mx-auto max-w-7xl px-6 py-24">
         <div className="flex items-end justify-between gap-6 border-b border-border pb-6">
           <div>
-            <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">Selected work</p>
+            <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
+              Selected work
+            </p>
             <h2 className="mt-3 font-display text-3xl font-bold md:text-5xl">Featured projects</h2>
           </div>
-          <Link to="/projects" className="hidden items-center gap-2 text-sm font-medium text-foreground hover:text-accent md:inline-flex">
+          <Link
+            to="/projects"
+            className="hidden items-center gap-2 text-sm font-medium text-foreground hover:text-accent md:inline-flex"
+          >
             All projects <ArrowUpRight className="h-4 w-4" />
           </Link>
         </div>

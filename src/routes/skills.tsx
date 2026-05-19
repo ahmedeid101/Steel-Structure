@@ -6,7 +6,10 @@ export const Route = createFileRoute("/skills")({
   head: () => ({
     meta: [
       { title: `Skills — ${site.name}` },
-      { name: "description", content: `Technical skills, software, and standards used by ${site.name}.` },
+      {
+        name: "description",
+        content: `Technical skills, software, and standards used by ${site.name}.`,
+      },
       { property: "og:title", content: `Skills — ${site.name}` },
       { property: "og:description", content: `Technical skills and standards.` },
     ],
@@ -26,7 +29,9 @@ function SkillsPage() {
         <div className="grid gap-10 md:grid-cols-2">
           {skillGroups.map((group) => (
             <div key={group.label} className="rounded-xl border border-border p-8">
-              <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">{group.label}</p>
+              <p className="font-mono text-xs uppercase tracking-[0.25em] text-accent">
+                {group.label}
+              </p>
               <div className="mt-5 flex flex-wrap gap-2">
                 {group.items.map((s) => (
                   <span

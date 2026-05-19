@@ -7,10 +7,10 @@ export const site = {
   tagline: "Designing reliable steel structures from concept to construction.",
   summary:
     "Civil and structural engineer specializing in steel structures, industrial buildings, and on-site construction supervision. I combine analytical design with hands-on site experience to deliver safe, efficient, and code-compliant projects.",
-  yearsExperience: 2,
+  yearsExperience: 3,
   location: "Cairo, Egypt",
-  email: "eslam.maher.eng@gmail.com",
-  phone: "+20 100 000 0000",
+  email: "eslmaher123@gmail.com",
+  phone: "+201115297010",
   linkedin: "https://www.linkedin.com/in/eslam-maher-732624289/",
   cvUrl: "/Eslam-Maher-Salama-Ramadan-CV.pdf",
 };
@@ -26,36 +26,33 @@ export const strengths = [
 
 export const experience = [
   {
-    role: "Steel Structure Design Engineer",
-    company: "Steel Works Engineering",
-    period: "2023 — Present",
-    location: "Cairo, Egypt",
+    role: "Structural Engineer — Steel Detailer BIM Engineer",
+    company: "Adwa' Versay Construction",
+    period: "Jul 2024 — Present",
+    location: "Al Kharj, Riyadh, Saudi Arabia",
     points: [
-      "Lead structural design for industrial halls, warehouses, and PEB projects up to 60 m span.",
-      "Performed analysis and member design using SAP2000, Tekla Structures, and STAAD.Pro.",
-      "Coordinated with architects, MEP, and fabrication teams to optimize tonnage and constructability.",
+      "Working on Al Kharj Entertainment Complex Project with Hassan Allam Construction, including Administration Offices and warehouses.",
+      "Performing steel structure design, detailing, and BIM coordination for industrial and commercial facilities.",
     ],
   },
   {
-    role: "Site Structural Engineer",
-    company: "Orascom Construction",
-    period: "2021 — 2023",
-    location: "Egypt / GCC",
+    role: "Steel Technical Office Engineer",
+    company: "Advanced International Trade Company (AITCO)",
+    period: "Apr 2024 — Jun 2024",
+    location: "Riyadh, Saudi Arabia",
     points: [
-      "Supervised erection of steel frames, trusses, and roof systems for industrial facilities.",
-      "Managed daily QA/QC: bolt torque inspection, weld checks, and dimensional control.",
-      "Resolved on-site clashes between fabricator drawings and field conditions.",
+      "Steel Technical Office Engineer at steel fabrication, handling steel structure design and detailing.",
+      "Coordinated shop drawings, material take-offs, and fabrication documentation.",
     ],
   },
   {
-    role: "Junior Structural Engineer",
-    company: "Hassan Allam Construction",
-    period: "2020 — 2021",
+    role: "Technical Office Engineer — Steel Fabrication & QC",
+    company: "Engineering Building Firm (EBF)",
+    period: "Oct 2023 — Mar 2024",
     location: "Cairo, Egypt",
     points: [
-      "Assisted senior engineers in concrete and steel design for mixed-use developments.",
-      "Prepared RC detailing, BBS, and shop drawing reviews.",
-      "Conducted site visits and material acceptance reports.",
+      "Steel Structure Engineer for steel design and detailing.",
+      "Managed quality control processes for steel fabrication and ensured compliance with project specifications.",
     ],
   },
 ];
@@ -112,15 +109,36 @@ export const projects = [
 export const skillGroups = [
   {
     label: "Structural Design",
-    items: ["Steel Structures", "Connection Design", "PEB / MBS", "RC Design", "Seismic Analysis", "Wind & Crane Loads"],
+    items: [
+      "Steel Structures",
+      "Connection Design",
+      "PEB / MBS",
+      "RC Design",
+      "Seismic Analysis",
+      "Wind & Crane Loads",
+    ],
   },
   {
     label: "Software",
-    items: ["SAP2000", "Tekla Structures", "STAAD.Pro", "ETABS", "AutoCAD", "Revit", "Robot Structural"],
+    items: [
+      "SAP2000",
+      "Tekla Structures",
+      "STAAD.Pro",
+      "ETABS",
+      "AutoCAD",
+      "Revit",
+      "Robot Structural",
+    ],
   },
   {
     label: "Site & Construction",
-    items: ["Site Supervision", "QA / QC", "Erection Planning", "Shop Drawings", "Bolt & Weld Inspection"],
+    items: [
+      "Site Supervision",
+      "QA / QC",
+      "Erection Planning",
+      "Shop Drawings",
+      "Bolt & Weld Inspection",
+    ],
   },
   {
     label: "Codes & Standards",
@@ -131,7 +149,7 @@ export const skillGroups = [
 export const education = [
   {
     title: "B.Sc. in Civil Engineering",
-    org: "Faculty of Engineering — Egyptian University",
+    org: "Faculty of Engineering — Al-Azhar University",
     period: "2016 — 2020",
     note: "Structural Engineering track. Graduation project: Steel Industrial Building Design.",
   },

@@ -8,7 +8,10 @@ export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
       { title: `About — ${site.name}` },
-      { name: "description", content: `${site.summary} Learn more about ${site.name}, ${site.title}.` },
+      {
+        name: "description",
+        content: `${site.summary} Learn more about ${site.name}, ${site.title}.`,
+      },
       { property: "og:title", content: `About — ${site.name}` },
       { property: "og:description", content: site.summary },
       { property: "og:image", content: portrait },
@@ -42,31 +45,41 @@ function AboutPage() {
             <div className="mt-6 grid grid-cols-2 gap-4">
               <div className="rounded-lg border border-border p-5">
                 <p className="font-display text-3xl font-bold">{site.yearsExperience}+</p>
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">Years experience</p>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Years experience
+                </p>
               </div>
               <div className="rounded-lg border border-border p-5">
                 <p className="font-display text-3xl font-bold">25+</p>
-                <p className="text-xs uppercase tracking-wider text-muted-foreground">Projects delivered</p>
+                <p className="text-xs uppercase tracking-wider text-muted-foreground">
+                  Projects delivered
+                </p>
               </div>
             </div>
           </div>
 
           <div className="md:col-span-7">
-            <h2 className="font-display text-2xl font-semibold">A pragmatic structural engineer.</h2>
+            <h2 className="font-display text-2xl font-semibold">
+              A pragmatic structural engineer.
+            </h2>
             <div className="mt-4 space-y-4 text-muted-foreground">
               <p>
-                I design and supervise steel structures for industrial, infrastructure, and commercial projects.
-                My work bridges the design office and the construction site — I draw what can be built, and I build what
-                I've drawn.
+                I design and supervise steel structures for industrial, infrastructure, and
+                commercial projects. My work bridges the design office and the construction site — I
+                draw what can be built, and I build what I've drawn.
               </p>
               <p>
-                I've worked on PEB warehouses, heavy industrial halls, pedestrian bridges, and high-rise composite
-                frames. I'm fluent in international codes (AISC 360, Eurocode 3) and the practical realities of
-                fabrication tolerances, erection sequence, and on-site coordination.
+                I've worked on PEB warehouses, heavy industrial halls, pedestrian bridges, and
+                high-rise composite frames. I'm fluent in international codes (AISC 360, Eurocode 3)
+                and the practical realities of fabrication tolerances, erection sequence, and
+                on-site coordination.
               </p>
               <p>
-                Every project is judged on three things: <span className="text-foreground">is it safe, is it efficient,
-                and can it actually be built on time</span>. Those constraints are the fun part.
+                Every project is judged on three things:{" "}
+                <span className="text-foreground">
+                  is it safe, is it efficient, and can it actually be built on time
+                </span>
+                . Those constraints are the fun part.
               </p>
             </div>
 
@@ -96,7 +109,9 @@ function AboutPage() {
                 <li key={e.title} className="border-l-2 border-accent pl-5">
                   <p className="font-semibold">{e.title}</p>
                   <p className="text-sm text-muted-foreground">{e.org}</p>
-                  <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">{e.period}</p>
+                  <p className="mt-1 font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                    {e.period}
+                  </p>
                   {e.note && <p className="mt-2 text-sm text-muted-foreground">{e.note}</p>}
                 </li>
               ))}

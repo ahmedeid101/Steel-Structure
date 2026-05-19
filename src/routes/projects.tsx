@@ -7,7 +7,10 @@ export const Route = createFileRoute("/projects")({
   head: () => ({
     meta: [
       { title: `Projects — ${site.name}` },
-      { name: "description", content: `Selected steel structure and construction projects by ${site.name}.` },
+      {
+        name: "description",
+        content: `Selected steel structure and construction projects by ${site.name}.`,
+      },
       { property: "og:title", content: `Projects — ${site.name}` },
       { property: "og:description", content: `Featured engineering projects by ${site.name}.` },
       { property: "og:image", content: projects[0].image },
@@ -27,7 +30,10 @@ function ProjectsPage() {
       <section className="mx-auto max-w-7xl px-6 py-20">
         <div className="grid gap-10 md:grid-cols-2">
           {projects.map((p) => (
-            <article key={p.title} className="group overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-elevated">
+            <article
+              key={p.title}
+              className="group overflow-hidden rounded-xl border border-border bg-card transition-shadow hover:shadow-elevated"
+            >
               <div className="overflow-hidden">
                 <img
                   src={p.image}
@@ -43,7 +49,13 @@ function ProjectsPage() {
                 <p className="mt-2 text-sm text-muted-foreground">{p.description}</p>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {p.tags.map((t) => (
-                    <Badge key={t} variant="secondary" className="font-mono text-[10px] uppercase tracking-wider">{t}</Badge>
+                    <Badge
+                      key={t}
+                      variant="secondary"
+                      className="font-mono text-[10px] uppercase tracking-wider"
+                    >
+                      {t}
+                    </Badge>
                   ))}
                 </div>
               </div>

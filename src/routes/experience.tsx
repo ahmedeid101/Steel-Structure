@@ -7,7 +7,10 @@ export const Route = createFileRoute("/experience")({
   head: () => ({
     meta: [
       { title: `Experience — ${site.name}` },
-      { name: "description", content: `Professional experience and roles held by ${site.name}, ${site.title}.` },
+      {
+        name: "description",
+        content: `Professional experience and roles held by ${site.name}, ${site.title}.`,
+      },
       { property: "og:title", content: `Experience — ${site.name}` },
       { property: "og:description", content: `Professional experience of ${site.name}.` },
     ],
@@ -32,9 +35,13 @@ function ExperiencePage() {
               </span>
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <h2 className="font-display text-xl font-semibold">{exp.role}</h2>
-                <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">{exp.period}</p>
+                <p className="font-mono text-xs uppercase tracking-wider text-muted-foreground">
+                  {exp.period}
+                </p>
               </div>
-              <p className="mt-1 text-sm font-medium text-accent">{exp.company} · <span className="text-muted-foreground">{exp.location}</span></p>
+              <p className="mt-1 text-sm font-medium text-accent">
+                {exp.company} · <span className="text-muted-foreground">{exp.location}</span>
+              </p>
               <ul className="mt-4 space-y-2">
                 {exp.points.map((p) => (
                   <li key={p} className="flex gap-3 text-sm text-muted-foreground">

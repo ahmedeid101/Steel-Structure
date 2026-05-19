@@ -19,7 +19,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold tracking-tight">
+        <Link
+          to="/"
+          className="flex items-center gap-2 font-display text-lg font-bold tracking-tight"
+        >
           <span className="grid h-8 w-8 place-items-center rounded-md gradient-steel text-primary-foreground">
             <HardHat className="h-4 w-4" />
           </span>
@@ -41,14 +44,12 @@ export function Header() {
         <div className="hidden items-center gap-2 md:flex">
           <ThemeToggle />
           <Button asChild size="sm">
-            <a href={site.cvUrl} download>Download CV</a>
+            <a href={site.cvUrl} download>
+              Download CV
+            </a>
           </Button>
         </div>
-        <button
-          className="md:hidden"
-          aria-label="Toggle menu"
-          onClick={() => setOpen((v) => !v)}
-        >
+        <button className="md:hidden" aria-label="Toggle menu" onClick={() => setOpen((v) => !v)}>
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
@@ -70,7 +71,9 @@ export function Header() {
             <div className="mt-2 flex items-center gap-2">
               <ThemeToggle />
               <Button asChild size="sm" className="flex-1">
-                <a href={site.cvUrl} download>Download CV</a>
+                <a href={site.cvUrl} download>
+                  Download CV
+                </a>
               </Button>
             </div>
           </nav>

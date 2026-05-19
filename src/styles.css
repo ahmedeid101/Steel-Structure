@@ -10,14 +10,16 @@
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2") format("woff2");
+    src: url("https://fonts.gstatic.com/s/inter/v18/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2")
+      format("woff2");
   }
   @font-face {
     font-family: "Space Grotesk";
     font-style: normal;
     font-weight: 300 700;
     font-display: swap;
-    src: url("https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2") format("woff2");
+    src: url("https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUXskPMBBSSJLm2E.woff2")
+      format("woff2");
   }
 }
 
@@ -55,7 +57,12 @@
   --color-blueprint: var(--blueprint);
 
   --shadow-elevated: 0 30px 80px -30px color-mix(in oklab, var(--primary) 35%, transparent);
-  --gradient-steel: linear-gradient(135deg, var(--steel-dark) 0%, var(--primary) 60%, var(--blueprint) 100%);
+  --gradient-steel: linear-gradient(
+    135deg,
+    var(--steel-dark) 0%,
+    var(--primary) 60%,
+    var(--blueprint) 100%
+  );
 }
 
 :root {
@@ -142,29 +149,61 @@
     font-feature-settings: "ss01", "cv11";
     -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4, h5 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     font-family: var(--font-display);
     letter-spacing: -0.02em;
   }
 }
 
 @layer utilities {
-  .font-display { font-family: var(--font-display); }
-  .text-balance { text-wrap: balance; }
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
   .bg-grid {
     background-image:
-      linear-gradient(to right, color-mix(in oklab, var(--steel) 12%, transparent) 1px, transparent 1px),
-      linear-gradient(to bottom, color-mix(in oklab, var(--steel) 12%, transparent) 1px, transparent 1px);
+      linear-gradient(
+        to right,
+        color-mix(in oklab, var(--steel) 12%, transparent) 1px,
+        transparent 1px
+      ),
+      linear-gradient(
+        to bottom,
+        color-mix(in oklab, var(--steel) 12%, transparent) 1px,
+        transparent 1px
+      );
     background-size: 48px 48px;
   }
-  .gradient-steel { background: var(--gradient-steel); }
+  .gradient-steel {
+    background: var(--gradient-steel);
+  }
 
   @keyframes fade-up {
-    from { opacity: 0; transform: translateY(16px); }
-    to { opacity: 1; transform: translateY(0); }
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-  .animate-fade-up { animation: fade-up 0.7s ease-out both; }
-  .animate-delay-1 { animation-delay: 0.1s; }
-  .animate-delay-2 { animation-delay: 0.2s; }
-  .animate-delay-3 { animation-delay: 0.3s; }
+  .animate-fade-up {
+    animation: fade-up 0.7s ease-out both;
+  }
+  .animate-delay-1 {
+    animation-delay: 0.1s;
+  }
+  .animate-delay-2 {
+    animation-delay: 0.2s;
+  }
+  .animate-delay-3 {
+    animation-delay: 0.3s;
+  }
 }
