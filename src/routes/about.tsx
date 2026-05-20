@@ -39,7 +39,7 @@ function AboutPage() {
                 loading="lazy"
                 width={1024}
                 height={1280}
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-4/5 w-full object-cover"
               />
             </div>
             <div className="mt-6 grid grid-cols-2 gap-4">
