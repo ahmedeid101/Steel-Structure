@@ -50,7 +50,7 @@ function AboutPage() {
                 </p>
               </div>
               <div className="rounded-lg border border-border p-5">
-                <p className="font-display text-3xl font-bold">25+</p>
+                <p className="font-display text-3xl font-bold">10+</p>
                 <p className="text-xs uppercase tracking-wider text-muted-foreground">
                   Projects delivered
                 </p>
